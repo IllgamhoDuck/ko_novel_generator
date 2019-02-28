@@ -1,0 +1,6 @@
+data/
+generate/
+save/
+vocab/
+.ipynb_checkpoints
+__pycache__/
