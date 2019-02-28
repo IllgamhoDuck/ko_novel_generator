@@ -81,14 +81,14 @@ https://events.backend.ai/just-model-it/
 3. 입력 - `python generate --epoch 20 --prime ""거위?"" --len 10 --resume True`
 4. 출력 - `""맞아 난 거위야""`
 
-resume은 첫 입력에는 default가 False이기에 별도로 신경쓸 필요가 없다. 이후 두 번째 문구 생성시 앞에 문구에 이어서 하고 싶다면 `--resume True`라고 설정하면 된다. 여기서는 총 네 개의 문장이 이어서 작성되었다.
+resume은 첫 입력에는 default가 False이기에 별도로 신경쓸 필요가 없다. 이후 두 번째 문구 생성시 앞에 문구에 이어서 하고 싶다면 `--resume True`라고 설정하면 된다. 여기서는 총 네 개의 문장이 이어서 작성되었습니다.
 
 - "안녕 난 오리라고 해."
 - "난 거위라 해!"
 - "거위?"
 - "맞아 난 거위야"
 
-생성된 출력 텍스트 파일은 `generate`폴더의 `result.txt`에 저장되어있다.
+생성된 출력 텍스트 파일은 `generate`폴더의 `result.txt`에 저장되어 있습니다.
 
 ## 그외 테스트해본 모델
 #### l2w(Learning to Write) - https://github.com/ari-holtzman/l2w
