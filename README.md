@@ -85,7 +85,7 @@ https://events.backend.ai/just-model-it/
 3. 입력 - `python generate --epoch 20 --prime ""거위?"" --len 10 --resume True`
 4. 출력 - `""맞아 난 거위야""`
 
-resume은 첫 입력에는 default가 False이기에 별도로 신경쓸 필요가 없다. 이후 두 번째 문구 생성시 앞에 문구에 이어서 하고 싶다면 `--resume True`라고 설정하면 된다. 여기서는 총 네 개의 문장이 이어서 작성되었습니다.
+resume은 첫 입력에는 default가 False이기에 별도로 신경쓸 필요가 없습니다. 이후 두 번째 문구 생성시 앞에 문구에 이어서 하고 싶다면 `--resume True`라고 설정하면 됩니다. 여기서는 총 네 개의 문장이 이어서 작성되었습니다.
 
 - "안녕 난 오리라고 해."
 - "난 거위라 해!"
@@ -104,7 +104,7 @@ resume은 첫 입력에는 default가 False이기에 별도로 신경쓸 필요�
 - `Relevance`
 - `Lexical Style`
 
- **[SNLI](https://nlp.stanford.edu/projects/snli/) and [MultiNLI](https://www.nyu.edu/projects/bowman/multinli/)** 를 이용하여서 `Entailment discriminator`를 사용하여야 하는데, 이는 영문 데이터라 이와 부합하는 한글 데이터를 찾지 못해 모델 사용을 포기하였습니다. Beam search에서의 discriminator적용을 제외한 나머지 부분은 테스트 해보았습니다.
+ **[SNLI](https://nlp.stanford.edu/projects/snli/) and [MultiNLI](https://www.nyu.edu/projects/bowman/multinli/)** 를 이용하여서 `Entailment discriminator`를 학습하여야 하는데, 이는 영문 데이터라 이와 유사한 목적을  한글 데이터를 찾지 못해 모델 사용을 포기하였습니다. Beam search에서의 discriminator적용을 제외한 나머지 부분은 테스트 해보았습니다.
 
 #### Seq2seq attention - https://github.com/IBM/pytorch-seq2seq
 > 문장을 받아서 문장을 예측하여 출력하는 `seq2seq`에 `attention`이 적용된 모델입니다. RNN을 사용하긴 하지만, 문장 대 문장 단위로 기억이 전달되기 때문에 번역과 같은 작업에 적합합니다.
