@@ -67,7 +67,7 @@ https://events.backend.ai/just-model-it/
 - 다음의 사이트를 추천합니다. https://www.regexpal.com/
 
 3. save 폴더에 소설 텍스트 집어넣기
-`save` 폴더에 원하는 소설을 집어넣습니다.
+- `save` 폴더에 원하는 소설을 집어넣습니다.
 4. 단어 사전 생성
 `python vocab_generator.py`
 5. 학습 시작
