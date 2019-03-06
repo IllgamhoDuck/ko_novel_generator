@@ -1,0 +1,22 @@
+spring:
+  http:
+    encoding:
+      charset:    UTF-8
+  mvc:
+    view:
+      prefix:     /jsp/
+      suffix:     .jsp
+  output:
+    ansi: 
+      enabled: always
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://{DB_END_POINT}:{DB_PORT}/{DB_NAME}
+    username: {USER_NAME}
+    password: {PASSWORD}
+---
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+server:
+  tomcat:
+    uri-encoding: UTF-8

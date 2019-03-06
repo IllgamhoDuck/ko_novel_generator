@@ -1,0 +1,10 @@
+.main { font-size: 24px; border-bottom: solid 1px black; }
+.page1 { font-size: 14px; background-color: yellow; }
+.HUMAN {background-color: rgb(53, 53, 53) !important} 
+.AI {background-color: rgb(189, 93, 80) !important} 
+.container{background: rgb(94, 93, 93); 
+           border-radius: 10px;}
+body {background: rgb(94, 93, 93)}
+.card {margin: auto; margin-top: 10px; width:35rem}
+.cardList{height: 40rem; overflow-y: scroll;}
+.logo{margin: auto}

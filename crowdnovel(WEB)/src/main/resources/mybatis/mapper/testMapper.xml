@@ -1,0 +1,19 @@
+<!--?xml version="1.0" encoding="UTF-8" ?-->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.blackoribanana.crowdnovel.test.TestMapper">
+    <select id="getTestData" resultType="java.lang.String">
+      SELECT a FROM TEST
+        WHERE ROWNUM=1
+    </select>
+
+    <select id="getTestList" resultType="java.util.HashMap">
+      SELECT A, B FROM TEST
+    </select>
+
+    <insert id="insTestData">
+      INSERT INTO TEST(A,B)
+      VALUES('입력값', #{a})
+    </insert>
+</mapper>
