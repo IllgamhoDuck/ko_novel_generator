@@ -74,7 +74,8 @@ https://events.backend.ai/just-model-it/
 5. 학습 시작
 `python multi_train.py`
 6. 소설 생성
-`python generate.py --epoch [int] --prime [str] --len [int] --resume [bool]`
+`python generate.py --run [bool] --epoch [int] --prime [str] --len [int] --resume [bool]`
+- `run` - 모델을 실행 유무를 입력합니다
 - `epoch` - 학습된 모델 중 몇 번째 epoch 모델을 사용할 것인지 정합니다.
 - `prime` - 입력 문구를 정합니다. 문구를 입력하면 적합한 문구를 이어서 생성해냅니다.
 - `len` - 생성할 문장 길이를 정합니다.
