@@ -1,0 +1,44 @@
+<!--?xml version="1.0" encoding="UTF-8" ?-->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.blackoribanana.crowdnovel.test.ContentsMapper">
+    <select id="getContentsList" resultType="java.util.HashMap">
+     SELECT ID
+          , NOVEL_ID
+          , USER_NAME
+          , CONTENTS_TYPE
+          , TEXT 
+       FROM CONTENTS
+      WHERE NOVEL_ID = 1
+      ORDER BY ID
+    </select>
+
+    <insert id="insContentsData">
+    INSERT INTO CONTENTS 
+       ( 
+           NOVEL_ID 
+         , USER_NAME 
+         , CONTENTS_TYPE 
+         , TEXT 
+       ) 
+       VALUES 
+       ( 
+           1
+         , #{USER_NAME} 
+         , #{CONTENTS_TYPE} 
+         , #{TEXT} 
+       ) 
+    </insert>
+
+    <select id="getContentsCount" resultType="java.lang.Integer">
+     SELECT COUNT(*) AS CNT
+       FROM CONTENTS
+      WHERE NOVEL_ID = 1
+    </select>
+    <select id="getContentsMaxId" resultType="java.lang.Integer">
+     SELECT MAX(ID) AS MID
+       FROM CONTENTS
+      WHERE NOVEL_ID = 1
+    </select>
+</mapper>
