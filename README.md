@@ -55,6 +55,7 @@ https://events.backend.ai/just-model-it/
 9. `opt.py` - Option의 약자로, 전반적인 딥러닝 학습에 관련한 중요한 변수들을 저장
 10. `train.py` - 소설 학습
 11. `vocab_generator.py` - 소설을 바탕으로 사전 생성
+  
 
 ## 사용 방법
 사용 방법은 매우 간단합니다. 소설 전처리 과정을 제외하면 말이죠. 그 소설 전처리 코드는 아직 올려지지 않았기에 직접 하셔야 합니다.
@@ -93,6 +94,33 @@ resume은 첫 입력에는 default가 False이기에 별도로 신경쓸 필요�
 - "맞아 난 거위야"
 
 생성된 출력 텍스트 파일은 `generate`폴더의 `result.txt`에 저장되어 있습니다.
+
+
+
+## API(Flask)
+ko_novel_generator를 web에서 사용하기 위한 API 서버 (python Flask)
+
+#### API LIST
+- `put_Human_txt (get, post)`  
+사용자의 텍스트를 입력하여 추가 학습 후, 이어서 text를 generate함  
+  ###### paramters
+  1. `contents_id` : 사용자가 web에서 입력한 내용(contents)의 id
+  2. `is_first` : 최초 작성여부, True일 경우 신규 학습, False일 경우 이어서 학습함    
+  ###### result
+  생성한 text를 DB에 저장, return값은 없음
+  
+#### API 사용 방법
+###### depengency
+  - `flask` / `flask_restful` / `flask_script` / `flask_migrate`
+  - `sqlalchemy`
+  - `marshmallow`
+  - `pytorch`
+1. `config.py`  
+  `SQLALCHEMY_DATABASE_URI`에 DB 정보 입력
+2. `run.py`  
+  host(`YOUR_LOCAL_HOST`)에 호스트 정보 입력 후 실행
+  
+  
 
 ## 그외 테스트해본 모델
 #### l2w(Learning to Write) - https://github.com/ari-holtzman/l2w

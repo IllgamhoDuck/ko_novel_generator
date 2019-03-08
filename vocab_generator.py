@@ -4,7 +4,6 @@ import os
 import re
 import pickle
 import codecs
-import argparse
 
 
 def novel_list(path, path_list):
