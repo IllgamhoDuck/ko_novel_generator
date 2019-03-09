@@ -6,7 +6,7 @@ Lablup(래블업) - [Just model it 이벤트](https://events.backend.ai/just-mod
 
 
 ### 블랙오리바나나 팀
-![blackoribanana](https://github.com/IllgamhoDuck/ko_novel_generator/blob/master/blackoribanana.png?s=100)
+<img src="https://github.com/IllgamhoDuck/ko_novel_generator/blob/master/blackoribanana.png" width="300">
 
 웹사이트 기반으로 사람들이 함께 참여하여 소설을 작성하는 인공지능을 학습하고 이를 활용하여 인공지능과 함께 릴레이 소설을 써내려가는 것을 목적으로 하는 프로젝트입니다. 그리고 이 프로젝트의 핵심적인 부분인 한글 소설을 작성하는 딥러닝 모델을 구축하고자 합니다.
 
