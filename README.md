@@ -114,7 +114,8 @@ ko_novel_generator를 web에서 사용하기 위한 API 서버 (python Flask)
   - `flask` / `flask_restful` / `flask_script` / `flask_migrate`
   - `sqlalchemy`
   - `marshmallow`
-  - `pytorch`
+  - `pytorch`  
+###### execute
 1. `config.py`  
   `SQLALCHEMY_DATABASE_URI`에 DB 정보 입력
 2. `run.py`  
